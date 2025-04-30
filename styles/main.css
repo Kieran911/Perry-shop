@@ -6,14 +6,15 @@
 
 .nav-bar {
   height: 65px;
-  width: 1200px;
+  width: 98%;
   background-color: #efeeff;
-  padding: 12px;
-  margin: 35px 8px 10px;
+  padding: 10px;
+  padding-left: 20px;
+  margin: 35px auto;
   border: 1px solid #bebebe;
   border-radius: 7px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-size: 12px;
   position: fixed;
@@ -24,13 +25,27 @@
   z-index: 1000;
 }
 
-.nav-bar .nav-texts,
 .nav-icons,
 .quiz-container,
-.icons-container,
-.nav-text {
+.icons-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  column-gap: 2px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.nav-text {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.nav-bar .nav-texts {
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  column-gap: 2px;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
@@ -51,12 +66,13 @@
 .quiz-container {
   font-size: 11px;
   border: 1px solid #6f51f8;
-  border-radius: 15px;
-  padding: 3px 7px;
+  border-radius: 25px;
+  padding: 8px 12px;
+  white-space: nowrap;
 }
 
 .icons-container .icons {
-  padding: 15px;
+  padding: 12px;
 }
 
 .page1 {
@@ -68,38 +84,24 @@
   display: flex;
 }
 
-/* .page1 .vertical-text-container {
-      } */
+.page1 .divs {
+  display: flex;
+  justify-content: flex-end;
+}
+.page1 .divs-start {
+  display: flex;
+  justify-content: flex-start;
+}
 
-.vertical-box-ex {
-  /* aeonik font */
-  background-color: #b4bdbf;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 30px;
-  background: transparent;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  writing-mode: vertical-rl;
-  text-align: center;
-  line-height: 30px;
-  font-size: 12px;
-  font-family: sans-serif;
-  letter-spacing: 1px;
-  transform: rotate(180deg);
+.vertical-box {
+  border-inline: 1px solid black;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
   white-space: nowrap;
-  z-index: 30;
-}
-
-.left-bar {
-  left: 33.33vw;
-  background-color: #b4bdbf;
-}
-
-.right-bar {
-  right: 33.33vw;
-  background-color: #b4bdbf;
+  overflow: hidden;
+  transform: rotate(180deg);
 }
 
 .horizontal-box {
