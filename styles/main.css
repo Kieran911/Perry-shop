@@ -169,7 +169,6 @@
   flex-direction: column;
   row-gap: 2rem;
   font-size: 16px;
-  /*  max-width: 300px; */
 }
 
 /* SECTION 2 ANIMATION */
@@ -253,20 +252,6 @@
   font-size: 14px;
 }
 
-/* BOOT ANIMATION */
-/* #boot {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -50%) scale(1);
-        width: 200px;
-      }
-      
-      .boot-image,
-      .page5 {
-        position: relative;
-      } */
-
 .page5 {
   text-align: center;
   padding: 50px 20px;
@@ -278,7 +263,7 @@
   align-items: center;
   gap: 40px;
   flex-wrap: nowrap;
-  overflow-x: hidden; /* in case you have many products */
+  overflow-x: hidden;
 }
 
 .shoes {
@@ -721,4 +706,13 @@
   padding: 5px;
   margin-bottom: 30px;
   line-height: 30px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
